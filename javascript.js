@@ -7,3 +7,11 @@ function getComputerChoice() {
     const randomIndex = Math.floor(Math.random() * choices.length)
     return choices[randomIndex]
 }
+
+// create a function called getHumanChoice
+// return one choices based on user input
+
+function getHumanChoice(){
+    prompt("Choose rock, paper, or scissors")
+    
+}
