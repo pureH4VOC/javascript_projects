@@ -13,5 +13,12 @@ function getComputerChoice() {
 
 function getHumanChoice(){
     prompt("Choose rock, paper, or scissors")
-    
+}
+
+// Declare players score variables
+// create two new variables for humanScore and computerScore
+// initialize the values with a value of 0
+
+var humanScore(){
+
 }
