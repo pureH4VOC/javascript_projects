@@ -34,6 +34,6 @@ let computerScore = 0
 //increment the humanScore or computerScore based on the round winner
 
 function playRound (humanChoice, computerChoice){
-    const humanChoice = getHumanChoice();
-    const computerChoice = getComputerChoice();
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
 }
