@@ -26,3 +26,14 @@ function getHumanChoice(){
 
 let humanScore = 0
 let computerScore = 0
+
+//play round function pseudo code
+//create two parameters that take the human an comp choices as arguments
+//make humanChoice function case-insensitive 
+//console.log a string value to declare the winner with a prompt denoting who won "you lose, rock beats scissors"
+//increment the humanScore or computerScore based on the round winner
+
+function playRound (humanChoice, computerChoice){
+    const humanChoice = getHumanChoice();
+    const computerChoice = getComputerChoice();
+}
