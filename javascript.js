@@ -23,3 +23,6 @@ function getHumanChoice(){
 // let humanscore equal total number of instances where user won
 // let computerscore equal total number of instances where comp won
 // 
+
+let humanScore = 0
+let computerScore = 0
