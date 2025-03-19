@@ -19,6 +19,7 @@ function getHumanChoice(){
 // create two new variables for humanScore and computerScore
 // initialize the values with a value of 0
 
-var humanScore(){
-
-}
+// pseudo code
+// let humanscore equal total number of instances where user won
+// let computerscore equal total number of instances where comp won
+// 
