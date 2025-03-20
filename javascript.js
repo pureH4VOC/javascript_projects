@@ -33,7 +33,7 @@ let computerScore = 0
 //console.log a string value to declare the winner with a prompt denoting who won "you lose, rock beats scissors"
 //increment the humanScore or computerScore based on the round winner
 
-function playRound (humanChoice, computerChoice){
-    const humanSelection = getHumanChoice();
+function playRound (humanSelection, computerSelection){
+    const humanSelection = toLowerCase(getHumanChoice());
     const computerSelection = getComputerChoice();
 }
