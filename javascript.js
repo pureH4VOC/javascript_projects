@@ -13,6 +13,7 @@ function getComputerChoice() {
 
 function getHumanChoice(){
     prompt("Choose rock, paper, or scissors")
+    return prompt
 }
 
 // Declare players score variables
@@ -34,6 +35,6 @@ let computerScore = 0
 //increment the humanScore or computerScore based on the round winner
 
 function playRound(humanSelection, computerSelection){
-    humanSelection = getHumanChoice(toLowerCase());
+    humanSelection = getHumanChoice();
     computerSelection = getComputerChoice();
 }
