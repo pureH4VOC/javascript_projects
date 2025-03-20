@@ -13,7 +13,6 @@ function getComputerChoice() {
 
 function getHumanChoice(){
     prompt("Choose rock, paper, or scissors")
-    return prompt
 }
 
 // Declare players score variables
