@@ -1,4 +1,4 @@
-console.log("Hello World")
+console.log("Rock, Paper, Scissors")
 
 // get computer source will return a random string value of either "rock" "paper" or "scissors"
 
