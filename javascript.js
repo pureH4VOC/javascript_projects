@@ -12,7 +12,7 @@ function getComputerChoice() {
 // return one choices based on user input
 
 function getHumanChoice(){
-    let x=prompt("Choose rock, paper, or scissors")
+    let x =     prompt("Choose rock, paper, or scissors")
     return x.toLowerCase()
 }
 
