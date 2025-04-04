@@ -12,7 +12,8 @@ function getComputerChoice() {
 // return one choices based on user input
 
 function getHumanChoice(){
-    prompt("Choose rock, paper, or scissors")
+    let x=prompt("Choose rock, paper, or scissors")
+    return x.toLowerCase
 }
 
 // Declare players score variables
@@ -33,7 +34,12 @@ let computerScore = 0
 //console.log a string value to declare the winner with a prompt denoting who won "you lose, rock beats scissors"
 //increment the humanScore or computerScore based on the round winner
 
+let humanSelection = getHumanChoice();
+let computerSelection = getComputerChoice();
+
+
 function playRound(humanSelection, computerSelection){
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
+
+    
+    return
 }
