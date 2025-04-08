@@ -5,7 +5,7 @@ console.log("Rock, Paper, Scissors")
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
     const randomIndex = Math.floor(Math.random() * choices.length)
-    return choices.toLowerCase[randomIndex]
+    return choices[randomIndex]
 }
 
 // create a function called getHumanChoice
