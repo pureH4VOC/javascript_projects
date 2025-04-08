@@ -44,24 +44,24 @@ function playRound(humanSelection, computerSelection){
     computerSelection = getComputerChoice()  
     
     if (humanSelection === computerSelection) {
-        return prompt = `It's a tie! ${humanSelection} equals ${computerSelection}`;
+        return `It's a tie! ${humanSelection} equals ${computerSelection}`;
     } else if (humanSelection === "rock") {
         if (computerSelection === "scissors") {
-            return prompt = `You win! ${humanSelection} beats ${computerSelection}.`
+            return `You win! ${humanSelection} beats ${computerSelection}.`
         } else {
-            return prompt = `You lose ${computerSelection} beats ${humanSelection}.`
+            return `You lose ${computerSelection} beats ${humanSelection}.`
         }
     } else if (humanSelection === "paper") {
         if (computerSelection = "rock") {
-            return prompt = `You win! ${humanSelection} beats ${computerSelection}.`
+            return `You win! ${humanSelection} beats ${computerSelection}.`
         } else {
-            return prompt = `You lose. ${computerSelection} beats ${humanSelection}.`
+            return `You lose. ${computerSelection} beats ${humanSelection}.`
         }    
     } else if (humanSelection === "scissors") {
         if (computerSelection === "paper") {
-            return prompt `You win! ${ humanSelection} beats ${computerSelection}.`
+            return `You win! ${ humanSelection} beats ${computerSelection}.`
         } else {
-            return prompt = `You lose. ${computerSelection} beats ${humanSelection}.`
+            return `You lose. ${computerSelection} beats ${humanSelection}.`
         }
     }
 }
