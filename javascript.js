@@ -3,9 +3,9 @@ console.log("Rock, Paper, Scissors")
 // get computer source will return a random string value of either "rock" "paper" or "scissors"
 
 function getComputerChoice() {
-    const choices=["rock", "paper", "scissors"];
+    const choices = ["rock", "paper", "scissors"];
     const randomIndex = Math.floor(Math.random() * choices.length)
-    return choices[randomIndex]
+    return choices.toLowerCase[randomIndex]
 }
 
 // create a function called getHumanChoice
@@ -40,6 +40,14 @@ let computerSelection = getComputerChoice();
 
 function playRound(humanSelection, computerSelection){
     humanSelection = getHumanChoice()
-    computerSelection = getComputerChoice()    
-    return
-}
+    computerSelection = getComputerChoice()  
+    
+    if (humanSelection === computerSelection) {
+        return prompt = `It's a tie! ${humanSelection} equals ${computerSelection}`;
+    } else if (humanSelection === "rock") {
+        if (computerSelection === "scissors") {
+            return prompt = `You win! ${humanSelection} beats ${computerSelection}.`
+        } else {
+            return prompt = `You lose ${computerSelection} beats ${humanSelection}.`
+        }
+    }
