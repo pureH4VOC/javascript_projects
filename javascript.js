@@ -39,6 +39,7 @@ let computerSelection = getComputerChoice();
 
 
 function playRound(humanSelection, computerSelection){
+    
     humanSelection = getHumanChoice()
     computerSelection = getComputerChoice()  
     
@@ -49,6 +50,18 @@ function playRound(humanSelection, computerSelection){
             return prompt = `You win! ${humanSelection} beats ${computerSelection}.`
         } else {
             return prompt = `You lose ${computerSelection} beats ${humanSelection}.`
+        }
+    } else if (humanSelection === "paper") {
+        if (computerSelection = "rock") {
+            return prompt = `You win! ${humanSelection} beats ${computerSelection}.`
+        } else {
+            return prompt = `You lose. ${computerSelection} beats ${humanSelection}.`
+        }    
+    } else if (humanSelection === "scissors") {
+        if (computerSelection === "paper") {
+            return prompt `You win! ${ humanSelection} beats ${computerSelection}.`
+        } else {
+            return prompt = `You lose. ${computerSelection} beats ${humanSelection}.`
         }
     }
 }
