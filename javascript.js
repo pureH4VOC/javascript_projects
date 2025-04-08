@@ -51,3 +51,4 @@ function playRound(humanSelection, computerSelection){
             return prompt = `You lose ${computerSelection} beats ${humanSelection}.`
         }
     }
+}
