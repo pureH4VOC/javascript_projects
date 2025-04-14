@@ -65,3 +65,11 @@ function playRound(humanSelection, computerSelection){
         }
     }
 }
+
+// function that calls the playRound function and executes it fives times
+// function will log the score of a win to either human score or computer score
+// declare winner at the end of the five rounds
+
+function playGame(){
+
+}
