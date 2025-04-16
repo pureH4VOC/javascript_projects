@@ -25,8 +25,7 @@ function getHumanChoice(){
 // let computerscore equal total number of instances where comp won
 // 
 
-let humanScore = 0
-let computerScore = 0
+
 
 //play round function pseudo code
 //create two parameters that take the human an comp choices as arguments
@@ -38,38 +37,44 @@ let humanSelection = getHumanChoice();
 let computerSelection = getComputerChoice();
 
 
-function playRound(humanSelection, computerSelection){
-    
-    humanSelection = getHumanChoice()
-    computerSelection = getComputerChoice()  
-    
-    if (humanSelection === computerSelection) {
-        return `It's a tie! ${humanSelection} equals ${computerSelection}`;
-    } else if (humanSelection === "rock") {
-        if (computerSelection === "scissors") {
-            return `You win! ${humanSelection} beats ${computerSelection}.`
-        } else {
-            return `You lose ${computerSelection} beats ${humanSelection}.`
-        }
-    } else if (humanSelection === "paper") {
-        if (computerSelection = "rock") {
-            return `You win! ${humanSelection} beats ${computerSelection}.`
-        } else {
-            return `You lose. ${computerSelection} beats ${humanSelection}.`
-        }    
-    } else if (humanSelection === "scissors") {
-        if (computerSelection === "paper") {
-            return `You win! ${ humanSelection} beats ${computerSelection}.`
-        } else {
-            return `You lose. ${computerSelection} beats ${humanSelection}.`
-        }
-    }
-}
 
-// function that calls the playRound function and executes it fives times
-// function will log the score of a win to either human score or computer score
-// declare winner at the end of the five rounds
+
+// function that calls the playRound function
+//  run playRound function
+//  declare winner based on output
+//  increment humanScore or computerScore based on output
+//  loop playRound until either humanScore or computerScore reaches 3//
 
 function playGame(){
 
+    let humanScore = 0
+    let computerScore = 0
+
+    function playRound(humanSelection, computerSelection){
+    
+        humanSelection = getHumanChoice()
+        computerSelection = getComputerChoice()  
+        
+        if (humanSelection === computerSelection) {
+            return `It's a tie! ${humanSelection} equals ${computerSelection}`;
+        } else if (humanSelection === "rock") {
+            if (computerSelection === "scissors") {
+                return `You win! ${humanSelection} beats ${computerSelection}.`
+            } else {
+                return `You lose ${computerSelection} beats ${humanSelection}.`
+            }
+        } else if (humanSelection === "paper") {
+            if (computerSelection = "rock") {
+                return `You win! ${humanSelection} beats ${computerSelection}.`
+            } else {
+                return `You lose. ${computerSelection} beats ${humanSelection}.`
+            }    
+        } else if (humanSelection === "scissors") {
+            if (computerSelection === "paper") {
+                return `You win! ${ humanSelection} beats ${computerSelection}.`
+            } else {
+                return `You lose. ${computerSelection} beats ${humanSelection}.`
+            }
+        }
+    }
 }
