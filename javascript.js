@@ -56,7 +56,7 @@ function playGame(){
         computerSelection = getComputerChoice()  
 
         for (let i = 0; i < 5; i++){
-            i = playRound()
+            playRound();
         }
         
         if (humanSelection === computerSelection) {
