@@ -59,20 +59,26 @@ function playGame(){
             return `It's a tie! ${humanSelection} equals ${computerSelection}`;
         } else if (humanSelection === "rock") {
             if (computerSelection === "scissors") {
+                ++humanScore
                 return `You win! ${humanSelection} beats ${computerSelection}.`
             } else {
+                ++computerScore
                 return `You lose ${computerSelection} beats ${humanSelection}.`
             }
         } else if (humanSelection === "paper") {
             if (computerSelection = "rock") {
+                ++humanScore
                 return `You win! ${humanSelection} beats ${computerSelection}.`
             } else {
+                ++computerScore
                 return `You lose. ${computerSelection} beats ${humanSelection}.`
             }    
         } else if (humanSelection === "scissors") {
             if (computerSelection === "paper") {
+                ++humanScore
                 return `You win! ${ humanSelection} beats ${computerSelection}.`
             } else {
+                ++computerScore
                 return `You lose. ${computerSelection} beats ${humanSelection}.`
             }
         }
