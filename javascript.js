@@ -54,8 +54,6 @@ function playGame(){
     
         humanSelection = getHumanChoice()
         computerSelection = getComputerChoice()  
-
-        
         
         if (humanSelection === computerSelection) {
             return `It's a tie! ${humanSelection} equals ${computerSelection}`;
@@ -79,7 +77,8 @@ function playGame(){
             }
         }
     }
+    
     for (let i = 0; i < 5; i++){
-        playRound();
-    }
+            playRound();
+        }
 }
