@@ -21,8 +21,8 @@ function getHumanChoice(){
 // initialize the values with a value of 0
 
 // pseudo code
-// let humanscore equal total number of instances where user won
-// let computerscore equal total number of instances where comp won
+// let human score equal total number of instances where user won
+// let computer score equal total number of instances where comp won
 // 
 
 
