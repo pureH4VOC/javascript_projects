@@ -49,6 +49,7 @@ function playGame(){
 
     let humanScore = 0
     let computerScore = 0
+    let tieScore = 0
 
     for (let i = 0; i < 5; i++){
         playRound();
@@ -60,11 +61,12 @@ function playGame(){
         computerSelection = getComputerChoice()  
         
         if (humanSelection === computerSelection) {
+            ++tieScore
             return `It's a tie! ${humanSelection} equals ${computerSelection}`;
         } else if (humanSelection === "rock") {
             if (computerSelection === "scissors") {
                 ++humanScore
-                return `You win! ${humanSelection} beats ${computerSelection}.`
+                return `You win! ${humanSelection} beats ${computerSelection}.`;
             } else {
                 ++computerScore
                 return `You lose ${computerSelection} beats ${humanSelection}.`
