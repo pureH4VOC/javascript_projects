@@ -36,6 +36,9 @@ function getHumanChoice(){
 let humanSelection = getHumanChoice();
 let computerSelection = getComputerChoice();
 
+let humanScore = 0
+let computerScore = 0
+let tieScore = 0
 
 
 
