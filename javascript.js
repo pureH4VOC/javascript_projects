@@ -64,30 +64,30 @@ function playGame(){
         computerSelection = getComputerChoice()  
         
         if (humanSelection === computerSelection) {
-            ++tieScore
+            tieScore++
             return `It's a tie! ${humanSelection} equals ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
         } else if (humanSelection === "rock") {
             if (computerSelection === "scissors") {
-                ++humanScore
+                humanScore++
                 return `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
             } else {
-                ++computerScore
+                computerScore++
                 return `You lose ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             }
         } else if (humanSelection === "paper") {
             if (computerSelection = "rock") {
-                ++humanScore
+                humanScore++
                 return `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             } else {
-                ++computerScore
+                computerScore++
                 return `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             }    
         } else if (humanSelection === "scissors") {
             if (computerSelection === "paper") {
-                ++humanScore
+                humanScore++
                 return `You win! ${ humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             } else {
-                ++computerScore
+                computerScore++
                 return `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             }
         }
