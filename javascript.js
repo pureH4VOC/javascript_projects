@@ -47,6 +47,10 @@ let computerSelection = getComputerChoice();
 
 function playGame(){
 
+    let humanScore = 0
+    let computerScore = 0
+    let tieScore = 0
+
     for (let i = 0; i < 5; i++){
         playRound();
     }
@@ -85,8 +89,4 @@ function playGame(){
             }
         }
     }
-
-    let humanScore = 0
-    let computerScore = 0
-    let tieScore = 0
 }    
