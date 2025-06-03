@@ -14,9 +14,6 @@ function getComputerChoice() {
 function getHumanChoice(){
     let x = prompt("Choose rock, paper, or scissors")
     return x.toLowerCase()
-    if (x === ""){
-        return;
-    }
 }
 
 // Declare players score variables
@@ -102,36 +99,36 @@ function playGame(){
         if (humanSelection === computerSelection) {
             tieScore++
             return `It's a tie! ${humanSelection} equals ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
-            console.log()
+            prompt return
         } else if (humanSelection === "rock") {
             if (computerSelection === "scissors") {
                 humanScore++
                 return `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
-                console.log()
+                prompt return
             } else {
                 computerScore++
                 return `You lose ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                console.log()
+                prompt return
             }
         } else if (humanSelection === "paper") {
             if (computerSelection = "rock") {
                 humanScore++
                 return `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                console.log()
+                prompt return
             } else {
                 computerScore++
                 return `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                console.log()
+                prompt return
             }    
         } else if (humanSelection === "scissors") {
             if (computerSelection === "paper") {
                 humanScore++
                 return `You win! ${ humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                console.log()
+                prompt return
             } else {
                 computerScore++
                 return `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                console.log()
+                prompt return
             }
         }
     }
