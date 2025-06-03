@@ -99,36 +99,36 @@ function playGame(){
         if (humanSelection === computerSelection) {
             tieScore++
             return `It's a tie! ${humanSelection} equals ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
-            prompt return
+            prompt (return)
         } else if (humanSelection === "rock") {
             if (computerSelection === "scissors") {
                 humanScore++
                 return `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
-                prompt return
+                prompt (return)
             } else {
                 computerScore++
                 return `You lose ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                prompt return
+                prompt (return)
             }
         } else if (humanSelection === "paper") {
             if (computerSelection = "rock") {
                 humanScore++
                 return `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                prompt return
+                prompt (return)
             } else {
                 computerScore++
                 return `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                prompt return
+                prompt (return)
             }    
         } else if (humanSelection === "scissors") {
             if (computerSelection === "paper") {
                 humanScore++
                 return `You win! ${ humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                prompt return
+                prompt (return)
             } else {
                 computerScore++
                 return `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                prompt return
+                prompt (return)
             }
         }
     }
