@@ -92,13 +92,6 @@ function playGame(){
 
     for (let i = 0; i < 5; i++){
         playRound();
-        if (humanScore = 3){
-            return 'You are the winner!; User Score: ${humanScore} Comp Score: ${computerScore)'
-        } else {
-            if (computerScore = 3)
-                return 'You lose!; Comp Score: ${computerScore} User Score: ${humanScore}'
-        }
-        
     }
 
     function playRound(humanSelection, computerSelection){
