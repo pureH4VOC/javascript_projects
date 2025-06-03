@@ -40,7 +40,40 @@ let humanScore = 0
 let computerScore = 0
 let tieScore = 0
 
-
+function playRound(humanSelection, computerSelection){
+    
+        humanSelection = getHumanChoice()
+        computerSelection = getComputerChoice()  
+        
+        if (humanSelection === computerSelection) {
+            tieScore++
+            return `It's a tie! ${humanSelection} equals ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
+        } else if (humanSelection === "rock") {
+            if (computerSelection === "scissors") {
+                humanScore++
+                return `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
+            } else {
+                computerScore++
+                return `You lose ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+            }
+        } else if (humanSelection === "paper") {
+            if (computerSelection = "rock") {
+                humanScore++
+                return `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+            } else {
+                computerScore++
+                return `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+            }    
+        } else if (humanSelection === "scissors") {
+            if (computerSelection === "paper") {
+                humanScore++
+                return `You win! ${ humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+            } else {
+                computerScore++
+                return `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+            }
+        }
+    }
 
 // function that calls the playRound function
 //  run playRound function
