@@ -13,6 +13,9 @@ function getComputerChoice() {
 
 function getHumanChoice(){
     let x = prompt("Choose rock, paper, or scissors")
+    if (x === ""){
+        return;
+    }
     return x.toLowerCase()
 }
 
