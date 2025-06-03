@@ -13,10 +13,10 @@ function getComputerChoice() {
 
 function getHumanChoice(){
     let x = prompt("Choose rock, paper, or scissors")
+    return x.toLowerCase()
     if (x === ""){
         return;
     }
-    return x.toLowerCase()
 }
 
 // Declare players score variables
