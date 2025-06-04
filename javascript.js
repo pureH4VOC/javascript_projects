@@ -51,30 +51,30 @@ function playRound(humanSelection, computerSelection){
         
         if (humanSelection === computerSelection) {
             tieScore++
-            alert `It's a tie! `${humanSelection}` equals `${computerSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``;
+            alert `It's a tie! `{humanSelection}` equals `{computerSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``;
         } else if (humanSelection === "rock") {
             if (computerSelection === "scissors") {
                 humanScore++
-                alert `You win! `${humanSelection}` beats `${computerSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``;
+                alert `You win! `{humanSelection}` beats `{computerSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``;
             } else {
                 computerScore++
-                alert `You lose `${computerSelection}` beats `${humanSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``
+                alert `You lose `{computerSelection}` beats `{humanSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``
             }
         } else if (humanSelection === "paper") {
             if (computerSelection = "rock") {
                 humanScore++
-                alert `You win! `${humanSelection}` beats `${computerSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``
+                alert `You win! `{humanSelection}` beats `{computerSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``
             } else {
                 computerScore++
-                alert `You lose. `${computerSelection}` beats `${humanSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``
+                alert `You lose. `{computerSelection}` beats `{humanSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``
             }    
         } else if (humanSelection === "scissors") {
             if (computerSelection === "paper") {
                 humanScore++
-                alert `You win! ${ humanSelection} beats `${computerSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``
+                alert `You win! { humanSelection} beats `{computerSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``
             } else {
                 computerScore++
-                alert `You lose. `${computerSelection}` beats `${humanSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``
+                alert `You lose. `{computerSelection}` beats `{humanSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``
             }
         }
     }
@@ -102,30 +102,30 @@ function playGame(){
         
         if (humanSelection === computerSelection) {
             tieScore++
-            alert `It's a tie! `${humanSelection}` equals `${computerSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``
+            alert `It's a tie! `{humanSelection}` equals `{computerSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``
         } else if (humanSelection === "rock") {
             if (computerSelection === "scissors") {
                 humanScore++
-                alert `You win! `${humanSelection}` beats `${computerSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``;
+                alert `You win! `{humanSelection}` beats `{computerSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``;
             } else {
                 computerScore++
-                alert `You lose `${computerSelection}` beats `${humanSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``
+                alert `You lose `{computerSelection}` beats `{humanSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``
             }
         } else if (humanSelection === "paper") {
             if (computerSelection = "rock") {
                 humanScore++
-                alert `You win! `${humanSelection}` beats `${computerSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``
+                alert `You win! `{humanSelection}` beats `{computerSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``
             } else {
                 computerScore++
-                alert `You lose. `${computerSelection}` beats `${humanSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``
+                alert `You lose. `{computerSelection}` beats `{humanSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``
             }    
         } else if (humanSelection === "scissors") {
             if (computerSelection === "paper") {
                 humanScore++
-                alert `You win! ${ humanSelection} beats `${computerSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``
+                alert `You win! { humanSelection} beats `{computerSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``
             } else {
                 computerScore++
-                alert `You lose. `${computerSelection}` beats `${humanSelection}`; User Score:`${humanScore}` Comp Score:`${computerScore}``
+                alert `You lose. `{computerSelection}` beats `{humanSelection}`; User Score:`{humanScore}` Comp Score:`{computerScore}``
             }
         }
     }
