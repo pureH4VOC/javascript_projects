@@ -1,6 +1,6 @@
 console.log("Rock, Paper, Scissors")
 
-// get computer source will return a random string value of either "rock" "paper" or "scissors"
+// get computer source will alert a random string value of either "rock" "paper" or "scissors"
 
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
@@ -9,7 +9,7 @@ function getComputerChoice() {
 }
 
 // create a function called getHumanChoice
-// return one choices based on user input
+// alert one choices based on user input
 
 function getHumanChoice(){
     let x = prompt("Choose rock, paper, or scissors")
@@ -47,30 +47,30 @@ function playRound(humanSelection, computerSelection){
         
         if (humanSelection === computerSelection) {
             tieScore++
-            return `It's a tie! ${humanSelection} equals ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
+            alert `It's a tie! ${humanSelection} equals ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
         } else if (humanSelection === "rock") {
             if (computerSelection === "scissors") {
                 humanScore++
-                return `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
+                alert `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
             } else {
                 computerScore++
-                return `You lose ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+                alert `You lose ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             }
         } else if (humanSelection === "paper") {
             if (computerSelection = "rock") {
                 humanScore++
-                return `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+                alert `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             } else {
                 computerScore++
-                return `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+                alert `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             }    
         } else if (humanSelection === "scissors") {
             if (computerSelection === "paper") {
                 humanScore++
-                return `You win! ${ humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+                alert `You win! ${ humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             } else {
                 computerScore++
-                return `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+                alert `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             }
         }
     }
@@ -98,37 +98,30 @@ function playGame(){
         
         if (humanSelection === computerSelection) {
             tieScore++
-            return `It's a tie! ${humanSelection} equals ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
-            prompt (return)
+            alert `It's a tie! ${humanSelection} equals ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
         } else if (humanSelection === "rock") {
             if (computerSelection === "scissors") {
                 humanScore++
-                return `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
-                prompt (return)
+                alert `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
             } else {
                 computerScore++
-                return `You lose ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                prompt (return)
+                alert `You lose ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             }
         } else if (humanSelection === "paper") {
             if (computerSelection = "rock") {
                 humanScore++
-                return `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                prompt (return)
+                alert `You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             } else {
                 computerScore++
-                return `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                prompt (return)
+                alert `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             }    
         } else if (humanSelection === "scissors") {
             if (computerSelection === "paper") {
                 humanScore++
-                return `You win! ${ humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                prompt (return)
+                alert `You win! ${ humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             } else {
                 computerScore++
-                return `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
-                prompt (return)
+                alert `You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
             }
         }
     }
