@@ -51,30 +51,30 @@ function playRound(humanSelection, computerSelection){
         
         if (humanSelection === computerSelection) {
             tieScore++
-            console.log(`It's a tie! ${humanSelection} equals ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
+            console.log(`It's a tie! ${humanSelection} equals ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`);
         } else if (humanSelection === "rock") {
             if (computerSelection === "scissors") {
                 humanScore++
-                console.log(`You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`;
+                console.log(`You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`);
             } else {
                 computerScore++
-                console.log(`You lose ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+                console.log(`You lose ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`)
             }
         } else if (humanSelection === "paper") {
             if (computerSelection = "rock") {
                 humanScore++
-                console.log(`You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+                console.log(`You win! ${humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`)
             } else {
                 computerScore++
-                console.log(`You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+                console.log(`You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`)
             }    
         } else if (humanSelection === "scissors") {
             if (computerSelection === "paper") {
                 humanScore++
-                console.log(`You win! { humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+                console.log(`You win! { humanSelection} beats ${computerSelection}; User Score:${humanScore} Comp Score:${computerScore}`)
             } else {
                 computerScore++
-                console.log(`You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`
+                console.log(`You lose. ${computerSelection} beats ${humanSelection}; User Score:${humanScore} Comp Score:${computerScore}`)
             }
         }
     }
