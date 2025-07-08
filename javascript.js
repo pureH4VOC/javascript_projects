@@ -5,7 +5,7 @@ console.log("Rock, Paper, Scissors")
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
     const randomIndex = Math.floor(Math.random() * choices.length)
-    console.log(choices[randomIndex]
+    return choices[randomIndex]
 }
 
 // create a function called getHumanChoice
@@ -14,9 +14,9 @@ function getComputerChoice() {
 function getHumanChoice(){
     let x = prompt("Choose rock, paper, or scissors")
     if (x === null){
-        console.log(
+        return x
     } else {
-        console.log(x.toLowerCase()
+        return x.toLowerCase()
     }
 }
 
